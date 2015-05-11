@@ -1,0 +1,47 @@
+#include"iostream"
+#include<stdio.h>
+#include<stdlib.h>
+#include"math.h"
+
+usingnamespacestd;
+intmain()
+{
+	boolcheck = true;
+	for (longinti = 1; i< 100000000; i++)
+	{
+		double sum = 8.17, accept = 1;
+		int fib = 0, f1 = 1, f2 = 1, step = 49, fact = 6, factcounter = 3;
+		while (accept > 0.00001)
+		{
+			fib = f1 + f2;
+			step = step * 7;
+			fact = fact * (factcounter + 1);
+			accept = (fib * step) / fact;
+			if (check == true)
+			{
+				sum = sum - accept;
+			}
+			else
+
+			{
+				sum = sum + accept;
+			}
+			factcounter++;
+			f1 = f2;
+			f2 = fib;
+			
+			if (check == true)
+
+				check = false;
+			else
+			{
+				check = true;
+			}
+
+		}
+		
+			
+	}
+	returnEXIT_SUCCESS;
+}
+
